@@ -4,14 +4,14 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Marko Bogdanovski",
   initials: "MB",
-  url: "https://dillion.io",
+  url: "https://markobogdanovski.com",
   location: "Pančevo, Serbia",
   locationLink: "https://www.google.com/maps/place/belgrade",
   description:
     "Software Engineer. I love building things and helping people.",
   summary:
     "I specialize in building SaaS applications powered by Blockchain and AI technologies. My core competency lies in end-to-end complete management of new project development, focusing on custom-tailored apps and services for businesses. I constantly seek new opportunities to leverage my skills and experience to help companies achieve their goals. Whether you're looking to build a new product or improve an existing one, I am dedicated to delivering high-quality solutions that drive results.",
-  avatarUrl: "/marko-bogdanovski.jpeg",
+  avatarUrl: "/marko-bogdanovski.jpg",
   skills: [
     "React",
     "Next.js",
