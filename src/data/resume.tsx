@@ -13,20 +13,19 @@ export const DATA = {
     "I specialize in building SaaS applications powered by Blockchain and AI technologies. My core competency lies in end-to-end complete management of new project development, focusing on custom-tailored apps and services for businesses. I constantly seek new opportunities to leverage my skills and experience to help companies achieve their goals. Whether you're looking to build a new product or improve an existing one, I am dedicated to delivering high-quality solutions that drive results.",
   avatarUrl: "/marko-bogdanovski.jpg",
   skills: [
-    "React",
-    "Next.js",
-    "Vue",
-    "Nuxt.js",
-    "NestJS",
-    "Node.js",
+    "React (NextJS, Redux, React Query)",
+    "Vue (NuxtJS, Vuex, Pinia)",
+    "NodeJS (Express, NestJS)",
+    "RxJS",
     "Typescript",
+    "Tailwind",
     "Laravel",
     "Inertia.js",
     "Go",
-    ".NET (C#)",
-    "Postgres",
+    "Python (Flask)",
+    "SQL (Postgres, MySQL, Oracle)",
     "MongoDB",
-    "AWS",
+    "AWS (S3, EC2, Route 53)",
     "Docker"
   ],
   navbar: [
@@ -48,6 +47,13 @@ export const DATA = {
         name: "GitHub",
         url: "https://github.com/markobogdanovski",
         icon: Icons.github,
+
+        navbar: true,
+      },
+      Resume: {
+        name: "Resume",
+        url: "/Marko Bogdanovski Resume.pdf",
+        icon: Icons.file,
 
         navbar: true,
       },
@@ -112,7 +118,7 @@ export const DATA = {
   projects: [
     {
       title: "Obba",
-      href: "https://obba.online/",
+      href: "https://www.producthunt.com/new/products/obba-store",
       dates: "Sep 2019 - Aug 2020",
       active: false,
       description:
