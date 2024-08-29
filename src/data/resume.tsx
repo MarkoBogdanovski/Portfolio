@@ -144,7 +144,7 @@ export const DATA = {
       ],
       image: "",
       video:
-        "https://res.cloudinary.com/dwl9ar0hz/video/upload/f_auto:video,q_auto/w45jzs4k2fvj0pvsesqm",
+        "https://wolverine-portfolio.s3.amazonaws.com/assets/Obba+Preview.gif",
     },
     {
       title: "Glorious CMS",
@@ -168,7 +168,7 @@ export const DATA = {
       ],
       image: "",
       video:
-        "https://res.cloudinary.com/dwl9ar0hz/video/upload/f_auto:video,q_auto/rueqfc4o5jssbmfctcf4",
+        "https://wolverine-portfolio.s3.amazonaws.com/assets/GloriousCMS+Preview.gif",
     },
   ]
 } as const;
