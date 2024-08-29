@@ -22,7 +22,7 @@ export const DATA = {
     "Laravel",
     "Inertia.js",
     "Go",
-    "Python (Flask)",
+    ".NET (C#)",
     "SQL (Postgres, MySQL, Oracle)",
     "MongoDB",
     "AWS (S3, EC2, Route 53)",
