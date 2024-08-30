@@ -122,16 +122,16 @@ export const DATA = {
       dates: "Sep 2019 - Aug 2020",
       active: false,
       description:
-        "Developed multi vendor e-commerce ",
+        "Developed multi vendor e-commerce platform.",
       technologies: [
         "Laravel",
         "NuxtJS",
         "Vuex",
-        "Cypress",
         "Gitlab CI/CD",
+        "EC2",
+        "S3",
         "Docker",
         "PostgreSQL",
-        "AWS",
         "Tailwind",
         "Socket.io"
       ],
@@ -142,9 +142,8 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://res.cloudinary.com/dwl9ar0hz/video/upload/f_webm,vc_vp9,q_auto/v1724614434/w45jzs4k2fvj0pvsesqm",
+      image: "https://wolverine-portfolio.s3.amazonaws.com/assets/Obba+Preview.gif",
+      video: "",
     },
     {
       title: "Glorious CMS",
@@ -166,9 +165,8 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://res.cloudinary.com/dwl9ar0hz/video/upload/f_webm,vc_vp9,q_auto/v1724614368/rueqfc4o5jssbmfctcf4",
+      image: "https://wolverine-portfolio.s3.amazonaws.com/assets/GloriousCMS+Preview.gif",
+      video:"",
     },
   ]
 } as const;
