@@ -144,7 +144,7 @@ export const DATA = {
       ],
       image: "",
       video:
-        "https://wolverine-portfolio.s3.amazonaws.com/assets/Obba+Preview.gif",
+        "https://res.cloudinary.com/dwl9ar0hz/video/upload/f_webm,vc_vp9,q_auto/v1724614434/w45jzs4k2fvj0pvsesqm",
     },
     {
       title: "Glorious CMS",
@@ -168,7 +168,7 @@ export const DATA = {
       ],
       image: "",
       video:
-        "https://wolverine-portfolio.s3.amazonaws.com/assets/GloriousCMS+Preview.gif",
+        "https://res.cloudinary.com/dwl9ar0hz/video/upload/f_webm,vc_vp9,q_auto/v1724614368/rueqfc4o5jssbmfctcf4",
     },
   ]
 } as const;
