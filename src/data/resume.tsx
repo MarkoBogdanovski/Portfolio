@@ -10,23 +10,20 @@ export const DATA = {
   description:
     "Software Engineer. I love building things and helping people.",
   summary:
-    "I specialize in building SaaS applications powered by Blockchain and AI technologies. My core competency lies in end-to-end complete management of new project development, focusing on custom-tailored apps and services for businesses. I constantly seek new opportunities to leverage my skills and experience to help companies achieve their goals. Whether you're looking to build a new product or improve an existing one, I am dedicated to delivering high-quality solutions that drive results.",
+    "I specialize in building SaaS applications powered OpenAI. My core competency lies in end-to-end complete management of new project development, focusing on custom-tailored apps and services for businesses. I constantly seek new opportunities to leverage my skills and experience to help companies achieve their goals. Whether you're looking to build a new product or improve an existing one, I am dedicated to delivering high-quality solutions that drive results.",
   avatarUrl: "/marko-bogdanovski.jpg",
   skills: [
-    "React (NextJS, Redux, React Query)",
-    "Vue (NuxtJS, Vuex, Pinia)",
-    "NodeJS (Express, NestJS)",
-    "RxJS",
+    "React",
+    "NestJS",
+    "OpenAI",
     "Typescript",
+    "Vue",
     "Tailwind",
-    "Laravel",
-    "Inertia.js",
-    "Go",
-    ".NET (C#)",
     "SQL (Postgres, MySQL, Oracle)",
     "MongoDB",
     "AWS (S3, EC2, Route 53)",
-    "Docker"
+    "Docker",
+    "Laravel"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -34,7 +31,7 @@ export const DATA = {
   ],
   contact: {
     email: "mr.bogdanovski@gmail.com",
-    tel: "+381603456468",
+    tel: "#",
     social: {
       LinkedIn: {
         name: "LinkedIn",
@@ -142,8 +139,8 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "https://wolverine-portfolio.s3.amazonaws.com/assets/Obba+Preview.gif",
-      video: "",
+      image: "",
+      video: "https://res.cloudinary.com/dwl9ar0hz/video/upload/f_webm,vc_vp9,q_auto/v1724614434/w45jzs4k2fvj0pvsesqm",
     },
     {
       title: "Glorious CMS",
@@ -165,8 +162,8 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "https://wolverine-portfolio.s3.amazonaws.com/assets/GloriousCMS+Preview.gif",
-      video:"",
+      image: "",
+      video: "https://res.cloudinary.com/dwl9ar0hz/video/upload/f_webm,vc_vp9,q_auto/v1724614368/rueqfc4o5jssbmfctcf4",
     },
   ]
 } as const;
