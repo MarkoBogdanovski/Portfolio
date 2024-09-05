@@ -115,7 +115,7 @@ export const DATA = {
   projects: [
     {
       title: "Obba",
-      href: "https://www.producthunt.com/new/products/obba-store",
+      href: "https://www.producthunt.com/products/obba-store",
       dates: "Sep 2019 - Aug 2020",
       active: false,
       description:
@@ -135,7 +135,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://www.producthunt.com/new/products/obba-store",
+          href: "https://www.producthunt.com/products/obba-store",
           icon: <Icons.globe className="size-3" />,
         },
       ],
