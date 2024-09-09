@@ -8,13 +8,14 @@ export const DATA = {
   location: "Pančevo, Serbia",
   locationLink: "https://www.google.com/maps/place/belgrade",
   description:
-    "Software Engineer. I love building things and helping people.",
+    "Senior Software Engineer.",
   summary:
-    "I specialize in building SaaS applications powered OpenAI. My core competency lies in end-to-end complete management of new project development, focusing on custom-tailored apps and services for businesses. I constantly seek new opportunities to leverage my skills and experience to help companies achieve their goals. Whether you're looking to build a new product or improve an existing one, I am dedicated to delivering high-quality solutions that drive results.",
+    "I specialize in building SaaS applications. My core competency lies in complete management of new project development, focusing on custom-tailored apps and services for businesses. I constantly seek new opportunities to leverage my skills and experience to help companies achieve their goals. ",
   avatarUrl: "/marko-bogdanovski.jpg",
   skills: [
     "React",
     "NestJS",
+    "Express",
     "OpenAI",
     "Typescript",
     "Vue",
@@ -65,6 +66,18 @@ export const DATA = {
   },
 
   work: [
+    {
+      company: "Blue Cloud",
+      href: "https://www.blue.cloud/",
+      badges: [],
+      location: "Remote",
+      title: "Software Engineer",
+      logoUrl: "/bluecloudservices_logo.jpeg",
+      start: "September 2024",
+      end: "Present",
+      description:
+        "Developer at Gen AI team.",
+    },
     {
       company: "Ledger Leopard",
       href: "https://ledgerleopard.com/",
