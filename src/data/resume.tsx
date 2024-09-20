@@ -98,7 +98,7 @@ export const DATA = {
       title: "Frontend Lead & Team Lead",
       logoUrl: "/sendelemental_logo.jpeg",
       start: "January 2021",
-      end: "Jul 2023",
+      end: "July 2023",
       description:
         "Architected and wrote the entire MVP of the product for the frontned using Next, Redux, TypeScript. Worked closely with the CTO to define and align objectives with the company's strategic vision. I have effectively conveyed the company's vision to the Design Team, fostering a shared understanding of the product roadmap. I also coordinated a team of 8 people.",
     },
