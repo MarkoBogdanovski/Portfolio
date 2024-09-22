@@ -75,8 +75,10 @@ export const DATA = {
       logoUrl: "/bluecloudservices_logo.jpeg",
       start: "September 2024",
       end: "Present",
-      description:
-        "Drafting and developing systems for banking platforms. Integrating and migrating existing Auth0 user base on a new architecture.",
+      description:  [
+        "Drafting and developing systems for banking platforms.",
+        "Integrating and migrating existing Auth0 user base on a new architecture.",
+      ]
     },
     {
       company: "Ledger Leopard",
@@ -87,8 +89,14 @@ export const DATA = {
       logoUrl: "/ledger_leopard_logo.jpeg",
       start: "August 2023",
       end: "July 2024",
-      description:
-        "I did a deep analysis of the platform and made improvements to the potential bottlenecks, optimizing code and the overall workflow of the product. I also developed new features around OpenAi and other Azure Services.",
+      description: [
+        "Implemented social logins using Auth0",
+        "Developed new features integrating OpenAI and Azure Services.",
+        "Built Azure AI Document Intelligence workers for document processing.",
+        "Created a Scraper and Parser worker service for business websites as a resource for ChatBot.",
+        "Integrated User Roles and Policy management into the existing codebase.",
+        "Conducted in-depth analysis to identify and optimize platform bottlenecks, improving overall code performance and workflow efficiency.",
+      ]
     },
     {
       company: "Elemental",
@@ -99,8 +107,17 @@ export const DATA = {
       logoUrl: "/sendelemental_logo.jpeg",
       start: "January 2021",
       end: "July 2023",
-      description:
-        "Architected and wrote the entire MVP of the product for the frontned using Next, Redux, TypeScript. Worked closely with the CTO to define and align objectives with the company's strategic vision. I have effectively conveyed the company's vision to the Design Team, fostering a shared understanding of the product roadmap. I also coordinated a team of 8 people.",
+      description: [
+        "Managed systems with nearly 100 million campaigns, ensuring stability and scalability of services.",
+        "Collaborated closely with the CTO and management to define and optimize feature release cycles.",
+        "Coordinated frontend team to align them with the timeline and the product vision.",
+        "Set up and integrated S3 and Lambda services for asset storage, resizing, and parsing.",
+        "Interviewed and onboarded new team members alongside the CTO.",
+        "Led the development of key platform features such as Journeys (Automated Workflows) and Campaigns.",
+        "Collaborated with the CTO to build a platform from the ground up, managing timelines and setting strategic directions.",
+        "Worked with developers from Beefree and React Flow libraries to address security risks and suggest core-level improvements for feature implementation.",
+        "Led coordination between frontend and backend teams to align project timelines and ensure stable releases with fully functional features.",
+      ]
     },
     {
       company: "Serbia BroadBand",
@@ -111,8 +128,13 @@ export const DATA = {
       logoUrl: "/sbb_serbia_broadband_logo.jpeg",
       start: "August 2016",
       end: "December 2020",
-      description:
-        "Played a key role in developing proprietary features and services, expanding the ecosystem by adding instances for new regions. Conducted thorough testing and implemented robust solutions for reliable updates meeting user requirements. Implemented a 3D secure payment gateway for cross-platform services and acquired expertise in cross-domain session handling, ensuring smooth and secure user experiences.",
+      description: [
+        "Lead redesign of Hosting and Cloud Platform.",
+        "Conducted thorough testing and implemented robust solutions, including 3D secure payment gateway and User microservice for cross-platform systems.",
+        "Developed features for a Cloud Hosting Platform using the OnApp platform, including Remote Terminal Console, Disk Resizing, Automated OS Installation, and Server & Disk Renaming.",
+        "Collaborated with network engineers and system administrators to deploy product instances for Montenegro and Bosnia & Herzegovina.",
+        "Gained expertise in cross-domain session handling, ensuring secure and seamless user experiences.",
+      ],
     },
   ],
   education: [
