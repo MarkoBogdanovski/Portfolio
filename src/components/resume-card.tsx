@@ -101,7 +101,7 @@ export const ResumeCard = ({
                 <ul className="list-disc">
               {description && description.length > 0 &&
                 description.map((desc, index) => (
-                    <li style={{fontSize: 12}}>{desc}</li>
+                    <li key={index} style={{fontSize: 12}}>{desc}</li>
                   ))
               }
               </ul>
