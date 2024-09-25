@@ -116,7 +116,7 @@ export const DATA = {
         "Led the development of key platform features such as Journeys (Automated Workflows) and Campaigns.",
         "Collaborated with the CTO to build a platform from the ground up, managing timelines and setting strategic directions.",
         "Worked with developers from Beefree and React Flow libraries to address security risks and suggest core-level improvements for feature implementation.",
-        "Led coordination between frontend and backend teams to align project timelines and ensure stable releases with fully functional features.",
+        "Led teams of 7 people in total to align project timelines and ensure stable releases with fully functional features.",
       ]
     },
     {
