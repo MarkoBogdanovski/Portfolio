@@ -14,17 +14,19 @@ export const DATA = {
   avatarUrl: "/marko-bogdanovski.jpg",
   skills: [
     "React",
-    "NestJS",
-    "Express",
-    "OpenAI",
-    "Typescript",
     "Vue",
-    "Tailwind",
-    "SQL (Postgres, MySQL, Oracle)",
+    "Typescript",
+    "Nest.js",
+    "Express.js",
+    "PostgreSQL",
+    "MySQL",
+    "Oracle DB",
+    "Azure (OpenAI, AI Search, Document Intelligence, Blob Storage)",
+    "AWS (S3 Bucket, EC2, Route 53)",
     "MongoDB",
-    "AWS (S3, EC2, Route 53)",
     "Docker",
-    "Laravel"
+    "Laravel",
+    "Tailwind"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
