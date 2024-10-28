@@ -50,13 +50,13 @@ export const DATA = {
 
         navbar: true,
       },
-      Resume: {
-        name: "Resume",
-        url: "/Marko Bogdanovski Resume.pdf",
-        icon: Icons.file,
+      // Resume: {
+      //   name: "Resume",
+      //   url: "/Marko Bogdanovski Resume.pdf",
+      //   icon: Icons.file,
 
-        navbar: true,
-      },
+      //   navbar: true,
+      // },
       email: {
         name: "Send Email",
         url: "#",
@@ -122,12 +122,12 @@ export const DATA = {
       ]
     },
     {
-      company: "Meone Agency",
+      company: "Meone Agency (Self Employed)",
       href: "#",
       badges: [],
       location: "Remote",
       title: "Software Engineer",
-      logoUrl: "/ledger_leopard_logo.jpeg",
+      logoUrl: "",
       start: "August 2018",
       end: "June 2021",
       description: [
