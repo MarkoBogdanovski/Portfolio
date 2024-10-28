@@ -105,7 +105,7 @@ export const DATA = {
       badges: [],
       href: "https://sendelemental.com",
       location: "Remote",
-      title: "Frontend Lead & Team Lead",
+      title: "Frontend Lead",
       logoUrl: "/sendelemental_logo.jpeg",
       start: "January 2021",
       end: "July 2023",
@@ -122,6 +122,19 @@ export const DATA = {
       ]
     },
     {
+      company: "Meone Agency",
+      href: "#",
+      badges: [],
+      location: "Remote",
+      title: "Software Engineer",
+      logoUrl: "/ledger_leopard_logo.jpeg",
+      start: "August 2018",
+      end: "June 2021",
+      description: [
+        "Working as a contractor."
+      ]
+    },
+    {
       company: "Serbia BroadBand",
       href: "https://sbb.rs/",
       badges: [],
@@ -129,7 +142,7 @@ export const DATA = {
       title: "Software Engineer",
       logoUrl: "/sbb_serbia_broadband_logo.jpeg",
       start: "August 2016",
-      end: "December 2020",
+      end: "June 2018",
       description: [
         "Lead redesign of Hosting and Cloud Platform.",
         "Conducted thorough testing and implemented robust solutions, including 3D secure payment gateway and User microservice for cross-platform systems.",
