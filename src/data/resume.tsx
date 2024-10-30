@@ -109,7 +109,7 @@ export const DATA = {
       location: "Remote",
       title: "Frontend Lead",
       logoUrl: "/sendelemental_logo.jpeg",
-      start: "January 2021",
+      start: "Jun 2021",
       end: "July 2023",
       description: [
         "Managed systems with nearly 100 million campaigns, ensuring stability and scalability of services.",
