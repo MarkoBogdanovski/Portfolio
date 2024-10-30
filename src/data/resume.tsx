@@ -14,11 +14,11 @@ export const DATA = {
   avatarUrl: "/marko-bogdanovski.jpg",
   skills: [
     "React",
-    "Vue",
-    "Typescript",
+    "Svelte",
     "Nest.js",
     "Express.js",
     "RxJS",
+    "Typescript",
     "PostgreSQL",
     "MySQL",
     "Oracle DB",
