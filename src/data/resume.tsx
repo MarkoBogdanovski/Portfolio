@@ -23,7 +23,7 @@ export const DATA = {
     "MySQL",
     "Oracle DB",
     "Monorepo",
-    "Azure (OpenAI, AI Search, Document Intelligence, Blob Storage)",
+    "Azure (OpenAI, AI Search, Document Intelligence, Blob Storage, Cognitive)",
     "AWS (S3 Bucket, EC2, Route 53)",
     "MongoDB",
     "Docker",
@@ -52,13 +52,13 @@ export const DATA = {
 
         navbar: true,
       },
-      // Resume: {
-      //   name: "Resume",
-      //   url: "/Marko Bogdanovski Resume.pdf",
-      //   icon: Icons.file,
+      Resume: {
+        name: "Resume",
+        url: "/Marko Bogdanovski Resume.pdf",
+        icon: Icons.file,
 
-      //   navbar: true,
-      // },
+        navbar: true,
+      },
       email: {
         name: "Send Email",
         url: "#",
