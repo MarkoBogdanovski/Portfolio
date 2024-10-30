@@ -118,20 +118,6 @@ export const DATA = {
         "Led the development of key platform features such as Journeys (Automated Workflows) and Campaigns.",
         "Collaborated with the CTO to build a platform from the ground up, managing timelines and setting strategic directions.",
         "Worked with developers from Beefree and React Flow libraries to address security risks and suggest core-level improvements for feature implementation.",
-        "Led teams of 7 people in total to align project timelines and ensure stable releases with fully functional features.",
-      ]
-    },
-    {
-      company: "Meone Agency (Self Employed)",
-      href: "#",
-      badges: [],
-      location: "Remote",
-      title: "Software Engineer",
-      logoUrl: "",
-      start: "August 2018",
-      end: "June 2021",
-      description: [
-        "Working as a contractor."
       ]
     },
     {
@@ -142,7 +128,7 @@ export const DATA = {
       title: "Software Engineer",
       logoUrl: "/sbb_serbia_broadband_logo.jpeg",
       start: "August 2016",
-      end: "June 2018",
+      end: "May 2021",
       description: [
         "Lead redesign of Hosting and Cloud Platform.",
         "Conducted thorough testing and implemented robust solutions, including 3D secure payment gateway and User microservice for cross-platform systems.",
